@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* AgentRabbit warm palette */
+    --background: 38 60% 96%;       /* cream */
+    --foreground: 15 5% 28%;         /* warm gray */
+
+    --card: 40 33% 98%;              /* soft white */
+    --card-foreground: 15 5% 28%;
+
+    --primary: 14 46% 53%;           /* terra cotta */
+    --primary-foreground: 38 60% 96%;
+
+    --secondary: 107 20% 56%;        /* sage */
+    --secondary-foreground: 38 60% 96%;
+
+    --muted: 30 15% 90%;
+    --muted-foreground: 15 5% 45%;
+
+    --accent: 35 77% 60%;            /* honey */
+    --accent-foreground: 15 5% 20%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 30 15% 85%;
+    --input: 30 15% 85%;
+    --ring: 14 46% 53%;
+
+    --radius: 0.75rem;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-body antialiased;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: 'DM Serif Display', Georgia, serif;
+  }
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Selection color */
+::selection {
+  background-color: rgba(196, 102, 74, 0.2);
+}
