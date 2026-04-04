@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
 
@@ -97,7 +98,10 @@ export default function Hero() {
                 "text-sage-dark font-body font-medium text-center"
               )}
             >
-              You are on the list! We will be in touch soon.
+              You are on the list!{" "}
+              <Link to="/home" className="underline hover:text-terra transition-colors">
+                Browse helpers now
+              </Link>
             </motion.div>
           ) : (
             <>
@@ -131,14 +135,22 @@ export default function Hero() {
           )}
         </motion.form>
 
-        <motion.p
+        <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.8, duration: 0.6 }}
-          className="mt-6 text-sm text-warm-lighter font-body"
+          className="mt-6 space-y-3"
         >
-          Free to browse. You only pay when you hire a helper.
-        </motion.p>
+          <p className="text-sm text-warm-lighter font-body">
+            Free to browse. You only pay when you hire a helper.
+          </p>
+          <Link
+            to="/home"
+            className="inline-flex items-center gap-2 text-terra hover:text-terra-dark font-body font-medium transition-colors"
+          >
+            Browse helpers now &rarr;
+          </Link>
+        </motion.div>
       </div>
     </section>
   );
