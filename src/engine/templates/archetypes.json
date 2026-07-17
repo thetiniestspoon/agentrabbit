@@ -1,0 +1,84 @@
+{
+  "archetypes": [
+    {
+      "id": "researcher",
+      "name": "Researcher",
+      "description": "Deep exploration, evidence-backed findings",
+      "tempo": "deliberate",
+      "defaultStreamWeights": { "research": 0.65, "synthesis": 0.15, "critique": 0.15, "design": 0.05 },
+      "blendWeights": { "research": 0.45, "synthesis": 0.20, "critique": 0.20, "design": 0.15 }
+    },
+    {
+      "id": "analyst",
+      "name": "Analyst",
+      "description": "Deconstruct problems, data-driven insights",
+      "tempo": "deliberate",
+      "defaultStreamWeights": { "research": 0.50, "synthesis": 0.10, "critique": 0.35, "design": 0.05 },
+      "blendWeights": { "research": 0.35, "synthesis": 0.15, "critique": 0.35, "design": 0.15 }
+    },
+    {
+      "id": "strategist",
+      "name": "Strategist",
+      "description": "Evaluate options, define priorities, strategic direction",
+      "tempo": "measured",
+      "defaultStreamWeights": { "research": 0.15, "synthesis": 0.25, "critique": 0.10, "design": 0.50 },
+      "blendWeights": { "research": 0.20, "synthesis": 0.30, "critique": 0.15, "design": 0.35 }
+    },
+    {
+      "id": "creative",
+      "name": "Creative",
+      "description": "Novel ideas, unconventional directions",
+      "tempo": "quick",
+      "defaultStreamWeights": { "research": 0.05, "synthesis": 0.30, "critique": 0.05, "design": 0.60 },
+      "blendWeights": { "research": 0.15, "synthesis": 0.35, "critique": 0.10, "design": 0.40 }
+    },
+    {
+      "id": "critic",
+      "name": "Critic",
+      "description": "Challenge assumptions, stress-test ideas",
+      "tempo": "measured",
+      "defaultStreamWeights": { "research": 0.15, "synthesis": 0.10, "critique": 0.60, "design": 0.15 },
+      "blendWeights": { "research": 0.20, "synthesis": 0.10, "critique": 0.55, "design": 0.15 }
+    },
+    {
+      "id": "synthesizer",
+      "name": "Synthesizer",
+      "description": "Combine diverse inputs into coherent wholes",
+      "tempo": "measured",
+      "defaultStreamWeights": { "research": 0.10, "synthesis": 0.60, "critique": 0.15, "design": 0.15 },
+      "blendWeights": { "research": 0.20, "synthesis": 0.45, "critique": 0.20, "design": 0.15 }
+    },
+    {
+      "id": "facilitator",
+      "name": "Facilitator",
+      "description": "Guide collaboration, manage group dynamics",
+      "tempo": "quick",
+      "defaultStreamWeights": { "research": 0.15, "synthesis": 0.35, "critique": 0.20, "design": 0.30 },
+      "blendWeights": { "research": 0.25, "synthesis": 0.30, "critique": 0.25, "design": 0.20 }
+    },
+    {
+      "id": "prototyper",
+      "name": "Prototyper",
+      "description": "Build tangible implementations",
+      "tempo": "quick",
+      "defaultStreamWeights": { "research": 0.05, "synthesis": 0.10, "critique": 0.05, "design": 0.80 },
+      "blendWeights": { "research": 0.10, "synthesis": 0.15, "critique": 0.10, "design": 0.65 }
+    },
+    {
+      "id": "engagement",
+      "name": "Client Engagement Lead",
+      "description": "Client liaison, status synthesis",
+      "tempo": "measured",
+      "defaultStreamWeights": { "research": 0.15, "synthesis": 0.35, "critique": 0.20, "design": 0.30 },
+      "blendWeights": { "research": 0.25, "synthesis": 0.30, "critique": 0.25, "design": 0.20 }
+    },
+    {
+      "id": "designer",
+      "name": "Designer",
+      "description": "Visual assets, illustrations, infographics",
+      "tempo": "quick",
+      "defaultStreamWeights": { "research": 0.05, "synthesis": 0.10, "critique": 0.05, "design": 0.80 },
+      "blendWeights": { "research": 0.10, "synthesis": 0.15, "critique": 0.10, "design": 0.65 }
+    }
+  ]
+}
